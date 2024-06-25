@@ -94,7 +94,7 @@ Key Components
 * **utils/utils.ts:** Utility functions for handling cell growth logic.
 
 # Assumptions
-* The grid is initially empty.
+* The grid starts with at least one bacteria. However, this can be removed manually as well.
 * The default time interval for cell division is set to 1 second but can be adjusted by the user.
 
 # Performance Analysis
