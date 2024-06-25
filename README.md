@@ -1,6 +1,6 @@
 # Cell Growth Simulation
 ## Live Demo
-You can view the live demo of the application here.
+You can view the live demo of the application [here](https://cell-growth-simulation.vercel.app/).
 
 ## Background
 Bacterial colonies are groups of bacteria that grow on a solid medium, such as agar in a petri dish. A single bacterial cell that goes through several cycles of growth and division, is the source of every colony. Cell division results in the formation of visible clusters that may be examined for a variety of characteristics.
@@ -153,6 +153,6 @@ export const simulateCellGrowth = (grid: CellType[][], rows: number, cols: numbe
 Instead of choosing the brute force by simply checking if any adjacent cells of the alive cell are empty and filling them, this applicaton further optimizes this approach. The function `simulateCellGrowth` optimizes the simulation by first collecting all currently active cells (CellType.Alive) into an array (activeCells). This approach avoids unnecessary iterations over the entire grid and focuses only on cells that require evaluation for potential growth. This function targets active cells directly which reduces redundant checks and improves efficiency, making the growth simulation more performant especially as the grid size increases.
 
 # Conclusion
-This React application provides an interactive simulation of bacterial cell growth with various user controls and features. The application is optimized for performance and includes robust error handling. The project is deployed and available for live demo here.
+This React application provides an interactive simulation of bacterial cell growth with various user controls and features. The application is optimized for performance and includes robust error handling. The project is deployed and available for live demo [here](https://cell-growth-simulation.vercel.app/).
 
 # End of User Guide
