@@ -1,7 +1,4 @@
 # Cell Growth Simulation
-## Live Demo
-You can view the live demo of the application [here](https://cell-growth-simulation.vercel.app/).
-
 ## Background
 Bacterial colonies are groups of bacteria that grow on a solid medium, such as agar in a petri dish. A single bacterial cell that goes through several cycles of growth and division, is the source of every colony. Cell division results in the formation of visible clusters that may be examined for a variety of characteristics.
 
