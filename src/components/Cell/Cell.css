@@ -1,0 +1,15 @@
+.cell {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 35px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .cell.alive {
+    background-image: url('../../images/bacteria.png');
+    background-size: cover; 
+    background-position: center; 
+  }

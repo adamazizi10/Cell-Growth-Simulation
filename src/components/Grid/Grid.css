@@ -1,0 +1,22 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1);
+    grid-template-rows: repeat(1);
+    gap: 2px 2px;
+    background-color: none;
+    justify-content: center;
+    max-width: 100vh;
+    min-width: 100vh;
+    max-height: 75vh;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 25px;
+    overflow: auto;
+
+}
+
+
+.row {
+    display: flex;
+}

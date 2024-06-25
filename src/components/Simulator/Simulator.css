@@ -1,0 +1,196 @@
+/* styles.css */
+/* Include normalize.css in your styles.css or App.css */
+/* @import-normalize; */
+.simulator-title {
+  margin-top: 40px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1);
+  grid-template-rows: repeat(1);
+  /* Add grid-template-rows for vertical grid */
+  gap: 2px 2px;
+  background-color: none;
+  justify-content: center;
+  max-width: 100vh;
+  min-width: 100vh;
+  max-height: 75vh;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-left: 25px;
+  overflow: auto;
+
+}
+
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 2px solid blue;
+  border-radius: 35px;
+  padding: 10px;
+}
+
+.cell.alive {
+  background-image: url('../../images/bacteria.png');
+  background-size: cover; 
+  background-position: center; 
+
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+
+  border-radius: .25rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-blue:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  cursor: pointer;
+}
+
+
+.btn-green {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  border-radius: .25rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-green:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+  cursor: pointer;
+}
+
+
+.btn-red {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: .25rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-red:hover {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+  cursor: pointer;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+  border-radius: .25rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-dark:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+  cursor: pointer;
+}
+
+.start-stop-btn {
+  margin-right: 8px;
+  margin-left: 8px;
+  width: 90px;
+  height: 45px;
+  border-radius: 10px;
+  font-size:large;
+}
+
+.reset-btn {
+  margin-right: 20px;
+  margin-left: 8px;
+  width: 90px;
+  height: 45px;
+  border-radius: 10px;
+  font-size:large;
+}
+
+.time-and-grid-container {
+  margin-top: 13px;
+  gap: 10px; 
+}
+
+.time-and-grid-label {
+  font-size: 22px;
+  align-items: center;
+}
+
+.time-and-grid-input {
+  width: 50px;
+  height: 25px;
+  margin-left:10px; 
+  font-size: medium;
+}
+
+.time-and-grid-input.readonly {
+  background-color: lightgray; 
+  border: 1px solid #ced4da;
+  color: black;
+}
+
+
+.Graph-Container {
+  margin-top: 250px;
+}
