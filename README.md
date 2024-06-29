@@ -110,7 +110,7 @@ http://localhost:3000
 ```
 
 # Project Structure: src and components
-![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/3d413d52-bdb0-4e0f-bb50-f36c95f7d1b7)
+![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/9cb6d944-3c70-440f-a7df-9e2d273c0754)
 
 *Figure 4: Project structure (src)*
 
