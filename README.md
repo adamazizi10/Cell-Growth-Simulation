@@ -36,6 +36,7 @@ Grid Representation: The initial size of the grid is 16x22 which represents a pe
 
 ### Keyboard Navigation Controls
 ![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/4aee8f48-6092-40a6-90fb-9ae9f06efb26)
+
 *Figure 1: Keyboard Navigation Controls*
 
 
@@ -47,9 +48,11 @@ Grid Representation: The initial size of the grid is 16x22 which represents a pe
 
   
 ![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/77f21866-4ad6-422d-810d-9620b3cb987d)
+
 *Figure 2: Snapshot of the Simulator and the Graph*
   
 ![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/378f44c0-e4ef-4acb-b6f6-009075a2daa3)
+
 *Figure 3: Snapshot of the Simulator and the Graph after the growth of bacteria*
 
 # Setup the Application Locally on your Machine
@@ -108,6 +111,7 @@ http://localhost:3000
 
 # Project Structure: src and components
 ![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/3d413d52-bdb0-4e0f-bb50-f36c95f7d1b7)
+
 *Figure 4: Project structure (src)*
 
 Key Components
@@ -128,6 +132,7 @@ The application loads quickly with minimal initial load time of 828 ms. A score 
 <br />
 
 ![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/96d38b37-fe5e-4768-8f96-c3a4aa57eb6e)
+
 *Figure 6: Chrome Lighthouse - Navigation 1st Run*
 
 * All scores were 100% in the first try of Chrome Lighthouse Navigation Test including Performance, Best Practices, and SEO
@@ -155,12 +160,14 @@ The application loads quickly with minimal initial load time of 828 ms. A score 
 * Lastly, the speed index is 0.3s which is also considered a great score for this metric
 
 ![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/b5bd42b8-25b8-4c36-b82f-09b01b26d0ce)
+
 *Figure 9: Chrome Lighthouse - Timespan*
 
 * Timespan essentially gives you a timer and allows you to use the application and when you manually end the time, it tells you the scores you have achieved
 * This application achieved 100% in both Performance and Best Practices in ‘Timespan’
 
 ![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/b1af80b1-da43-4159-8e75-23e1e24ff58d)
+
 *Figure 10: Chrome Lighthouse - Snapshot*
 
 * Snapshot refers to a specific point in time when metrics are captured
