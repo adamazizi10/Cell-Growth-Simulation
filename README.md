@@ -13,30 +13,55 @@ This project is a React application that allows users to understand the growth p
 ## Features
 Grid Representation: The initial size of the grid is 16x22 which represents a petri dish where each cell can be either empty or occupied by a bacterial cell. This grid size is dynamic and can be changed by the user.
 
-Growth Rules:
+### Growth Rules:
 * Bacterial cells divide every fixed time interval with a default interval of 1 second. This interval is also dynamic and can be changed by the user.
 * Cells can only divide if there is at least one adjacent empty cell (up, down, left, right).
 
-User Controls:
+### User Controls:
 * There is a Start/Pause button to control the simulation.
 * There is also Reset button to restart the simulation.
 * There is an input field to set the time interval for cell division.
 * Users are able to manually place or remove bacterial cells on the grid by clicking on the cells.
 
-### Additional Features
+## Additional Features
+### Visualizer
 * There is an exponential graph that visualizes the growth rate of the number of cells over time.
+
+### Dynamic Grid Size
 * Users have the ability to dynamically change the grid size to explore different simulation scenarios.
 
-![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/23e08aa9-cda4-4624-ae4c-39e1b7de7f31)
-*Figure 1: Snapshot of the Simulator and the Graph*
+### Accessibility - Screen Reader and Keyboard Control
+* Necessary elements include descriptions to enhance compatibility with screen readers, improving accessibility.
+* The user has accessibility to Keyboard Navigation Controls and is able to use the application with only a keyboard
+
+### Keyboard Navigation Controls
+![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/4aee8f48-6092-40a6-90fb-9ae9f06efb26)
+*Figure 1: Keyboard Navigation Controls*
+
+
+### Assumptions
+* The grid starts with at least one bacteria. However, this can be removed manually as well.
+* The default time interval for cell division is set to 1 second but can be adjusted by the user.
+
+
+
   
-![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/eb1c1219-abb8-4628-bd56-43018db54dc0)
-*Figure 2: Snapshot of the Simulator and the Graph after the growth of bacteria*
+![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/77f21866-4ad6-422d-810d-9620b3cb987d)
+*Figure 2: Snapshot of the Simulator and the Graph*
+  
+![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/378f44c0-e4ef-4acb-b6f6-009075a2daa3)
+*Figure 3: Snapshot of the Simulator and the Graph after the growth of bacteria*
+
+# Setup the Application Locally on your Machine
+### Requirements
+In order for you to setup this application locally, you need the following two requirements:
+1) [node.js](https://nodejs.org/en/) (version 18 or above)
+2) [npm](https://www.npmjs.com/) (version 9 or above)
 
 ## Quick Setup Instructions
-These are quick setups, please navigate to the directory of your choice.
+The following is a quick setup by one copy-paste, please navigate to the directory of your choice.
 
-If you are using HTTPS:
+If you are using HTTPS, paste this:
 ```
 git clone https://github.com/adamazizi10/Cell-Growth-Simulation.git
 cd Cell-Growth-Simulation
@@ -44,7 +69,7 @@ npm install
 npm start
 ```
 
-If you are using SSH:
+If you are using SSH, paste this:
 ```
 git clone git@github.com:adamazizi10/Cell-Growth-Simulation.git
 cd Cell-Growth-Simulation
@@ -81,7 +106,10 @@ npm start
 http://localhost:3000
 ```
 
-# Project Structure
+# Project Structure: src and components
+![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/3d413d52-bdb0-4e0f-bb50-f36c95f7d1b7)
+*Figure 4: Project structure (src)*
+
 Key Components
 * **App.tsx:** Main application component.
 * **Simulator.tsx:** The main component that displays the Grid and its controls. This is the parent function of `Grid` and `Graph`.
@@ -90,35 +118,54 @@ Key Components
 * **Controls.tsx:** Contains the buttons and input fields for user controls.
 * **utils/utils.ts:** Utility functions for handling cell growth logic.
 
-# Assumptions
-* The grid starts with at least one bacteria. However, this can be removed manually as well.
-* The default time interval for cell division is set to 1 second but can be adjusted by the user.
-
 # Performance Analysis
 ## Metrics
 ![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/73cf52ae-9205-4199-afac-384b7aca5927)
 
-*Figure 3: The initial load of the application*
+*Figure 5: The initial load of the application*
 
-The application loads quickly with minimal initial load time of 828 ms due to efficient state management and component rendering.
+The application loads quickly with minimal initial load time of 828 ms. A score below 1000 ms is typically a well-performing application. Therefore, this application's initial load time is considered very fast.
 <br />
 
-<img width="860" alt="image" src="https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/5030077c-8129-4832-a62c-73569384bc54">
+![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/96d38b37-fe5e-4768-8f96-c3a4aa57eb6e)
+*Figure 6: Chrome Lighthouse - Navigation 1st Run*
 
-*Figure 4: The initial graph with a default of one alive cell without starting the simulation*
-
-Since the simulation is paused and there is a single cell in the grid, the performance is close to Figure 3 which is around 800-850 ms
-
-<img width="744" alt="image" src="https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/b8985158-16df-4cce-a689-0ae1a3e0f610">
-
-*Figure 5: The Simulation of the grid while not rending the exponential graph. The default grid is 16x22 and the default time interval is 1 second*
+* All scores were 100% in the first try of Chrome Lighthouse Navigation Test including Performance, Best Practices, and SEO
+* However, Accessibility was 83% and after looking at the suggestions, the colours were changed to have sufficient contract ratios
 
 
-<img width="764" alt="image" src="https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/3f0a0e22-9d57-4e23-8be1-9c74e4e2ce31">
+![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/16b9fcfd-4b84-4ec8-bb66-9de54c3fed23)
 
-*Figure 6: The Simulation of the grid while rendering the exponential graph. The default grid is 16x22 and the default time interval is 1 second*
+*Figure 7: Chrome Lighthouse - Navigation 2nd Run*
 
-Figure 5 and Figure 6 show that the simulation starts and more cells are dividing and growing exponentially, it affects the performance. However, these metrics are reasonable for the simulation algorithm due to the 2D nature of it.
+* After adding sufficient contract ratios to the colours, the scores with 100% were not affected which is great
+* Accessibility increased from 83% to 92%
+* After looking at the suggestions again, ‘htmlFor’ and ‘id’ were added to some elements
+* PNG image converted to WebP
+
+
+
+![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/da8c0a1e-576f-465b-9a32-e5ce75db19bb)
+
+*Figure 8: Chrome Lighthouse - Navigation Final Run*
+
+* All scores achieved 100%
+* First Contentful Paint and Largest Contentful Paint have scores of 0.2s and 0.6s which are great scores for these metrics
+* Total Blocking time decreased from 20 ms to 10 ms which is an amazing 50% decrease
+* Lastly, the speed index is 0.3s which is also considered a great score for this metric
+
+![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/b5bd42b8-25b8-4c36-b82f-09b01b26d0ce)
+*Figure 9: Chrome Lighthouse - Timespan*
+
+* Timespan essentially gives you a timer and allows you to use the application and when you manually end the time, it tells you the scores you have achieved
+* This application achieved 100% in both Performance and Best Practices in ‘Timespan’
+
+![image](https://github.com/adamazizi10/Cell-Growth-Simulation/assets/106051947/b1af80b1-da43-4159-8e75-23e1e24ff58d)
+*Figure 10: Chrome Lighthouse - Snapshot*
+
+* Snapshot refers to a specific point in time when metrics are captured
+* This is useful when comparing multiple versions
+* All scores achieved 100%
 
 
 ## Other Performance Optimizations

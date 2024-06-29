@@ -9,7 +9,7 @@
   }
   
   .cell.alive {
-    background-image: url('../../images/bacteria.png');
+    background-image: url('../../images/bacteria.webp');
     background-size: cover; 
     background-position: center; 
   }
