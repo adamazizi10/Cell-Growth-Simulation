@@ -73,7 +73,7 @@ const Simulator: React.FC = () => {
    const handleRowChange = (event: React.ChangeEvent<HTMLInputElement>) => {
        let newRows = parseInt(event.target.value);
        if (!newRows || newRows < 1) newRows = 1;
-       if (newRows > 50) newRows = 50;
+       if (newRows > 1000) newRows = 1000;
        setRows(newRows);
    };
 
@@ -81,7 +81,7 @@ const Simulator: React.FC = () => {
    const handleColChange = (event: React.ChangeEvent<HTMLInputElement>) => {
        let newCols = parseInt(event.target.value);
        if (!newCols || newCols < 1) newCols = 1;
-       if (newCols > 50) newCols = 50;
+       if (newCols > 1000) newCols = 1000;
        setCols(newCols);
    };
 
